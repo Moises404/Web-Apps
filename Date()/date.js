@@ -9,9 +9,9 @@ function currentTime() {
 // creating a new Date object and accessing the month, day, and year
 var dt = new Date();
 var month = dt.getMonth();
-var day = dt.getDay();
-var year = dt.getYear();
-console.log(month + "/" + day + "" + year);
+var day = dt.getDate();
+var year = dt.getFullYear();
+console.log(month + "/" + day + "/" + year);
 
 
 /* -- functions -- */
