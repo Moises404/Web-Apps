@@ -37,5 +37,8 @@ function updateClock() {
 	setTimeout(updateClock, 1000);
 }
 
+var newDate = new Date();
+console.log(newDate);
+
 //initial call
 updateClock();
