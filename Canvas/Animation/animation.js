@@ -1,3 +1,32 @@
+//HOW IT WORKS
+
+/* 
+The idea of the Animation class is to simplify our 
+animation projects by encapsulating and hiding all of the
+logic that animations require, such as providing the time
+interval between frame, handling the animation loop, and
+clearing the canvas.
+
+The key to the Animation class is inside the Animation 
+constructor, where we set the reqeustAnimFrame method of
+the window object. This method acts as a cross-browser 
+implementation of the reqesutAnimationFrame, which allows
+the user's browser to decide what the optimal FPS of the 
+animation should be. The FPS is completely dynamic and will
+change thoughout the animation.
+
+Our Animation class also provides methods like getTimeInterval(),
+which returns the number of milliseconds since the last animation
+frame, the getTime() method which returns the number of milliseconds
+the animation has ran since it started, a start() method which 
+starts the animation, a stop() method which stops the animation,
+and a clear() method which clears the canvas.
+*/
+
+
+
+
+
 //Define the Animation constructor and create a 
 //cross-browser reqeustAnimationFrame method.
 var Animation = function (canvasId) {
