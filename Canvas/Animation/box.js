@@ -8,7 +8,7 @@ window.onload = function () {
 
 	//Define the box's linear speed and create a box object that 
 	//contains the box's position and size
-}},,k	var linearSpeed = 100; // pixels/second
+	var linearSpeed = 100; // pixels/second
 	var box = {
 		x: 0,
 		y: canvas.height / 2 -25,
