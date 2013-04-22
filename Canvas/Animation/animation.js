@@ -59,7 +59,7 @@ Animation.prototype.getContext = function() {
 
 //Define the getCanvas() method
 Animation.prototype.getCanvas = function () {
-	return this.cavas;
+	return this.canvas;
 };
 
 //Define the clear() method which clreas the canvas
