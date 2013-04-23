@@ -5,7 +5,7 @@ returned from what's known in Javascript as a self executing
 function.
 */
 
-window.requestNextAnimationFrame = (function () {
+/*window.requestNextAnimationFrame = (function () {
 	return window.requestAnimationFrame ||
 		window.webkitRequestAnimationFrame ||
 		window.mozRequestAnimationFrame ||
@@ -24,7 +24,7 @@ window.requestNextAnimationFrame = (function () {
 				self.timeout = 1000 / 60 - (finish - start);
 			}, self.timeout);
 		};
-})();
+})();*/
 
 
 /*
