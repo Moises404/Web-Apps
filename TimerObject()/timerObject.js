@@ -10,3 +10,5 @@ var timer = {
 		console.log("tick");
 	}
 };
+
+timer.start();
