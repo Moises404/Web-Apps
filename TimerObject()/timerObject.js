@@ -1,0 +1,12 @@
+var timer = {
+	start: function() {
+		var self = this;
+		window.setInterval(function(){
+			self.tick();
+		}, 1000);
+	},
+
+	tick: function() {
+		console.log("tick");
+	}
+};
