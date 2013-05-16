@@ -1,0 +1,13 @@
+{
+  "name": "My extension",
+  "description": "Shows some of the features of the Context Menus API using an event page",
+  "version": "0.0.1",  
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "css": ["style.css"],
+      "js": ["jquery.js", "script.js"]
+    }
+  ],
+  "manifest_version": 2  
+}
