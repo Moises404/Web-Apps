@@ -1,0 +1,27 @@
+body {
+	background: #383b3b;
+}
+
+.wrapper {
+	margin: 2em auto;
+	width: 800px;
+	position: relative;
+}
+
+.cycle {
+	position: relative;
+	top: 20px;
+	left: 20px;
+
+	-webkit-animation-name: ride;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+	-webkit-animation-iteration-count: 4;
+	-webkit-animation-fill-mode: forwars;
+	-webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes ride {
+	from{-webkit-transform: translateX(0px);transform: translateX(0px);}
+	to{-webkit-transform: translateX(400px);transform: translateX(400px);}
+}
