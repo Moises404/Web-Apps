@@ -1,0 +1,12 @@
+body {background:#333;}	
+	
+.wrapper {
+	-webkit-perspective: 1000px;
+}
+.pic {
+	width:200px;
+	height:200px;
+	float:left;
+	margin:.5em;
+}
+

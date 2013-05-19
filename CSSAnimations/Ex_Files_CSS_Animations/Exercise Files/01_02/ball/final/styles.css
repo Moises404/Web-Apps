@@ -1,0 +1,25 @@
+
+body {margin: 4em 10%; background:#737373;}
+				
+.ball {
+	-webkit-animation-name: move-left-right;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-delay:1s;
+	-webkit-animation-fill-mode:both;
+}
+
+/* For our backwards animation-fill-mode example */
+@-webkit-keyframes move-left-right {
+	0% {-webkit-transform: translateX(100px);}
+	20% {-webkit-transform: translateX(-10px);}
+	100% {-webkit-transform:translateX(450px);}			
+}
+
+/* For our forwards animation-fill-mode */
+@-webkit-keyframes move-right {
+	from {-webkit-transform: translateX(0);}
+	to {-webkit-transform: translateX(450px);}
+}
+				

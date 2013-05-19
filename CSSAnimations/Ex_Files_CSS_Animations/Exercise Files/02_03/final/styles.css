@@ -1,0 +1,67 @@
+body {background-color: #f1fbff;}
+	.wrapper {margin:4em;}
+	
+	.button a {
+		color:white;
+		font-size:2em;
+		font-family: Georgia sans-serif;
+		font-style: italic;
+		font-weight:bold;
+		text-decoration: none;
+		display: block;
+	}
+	
+	.button {
+		width:300px;
+		height:50px;
+		padding:24px 0px 10px 0;
+		margin:0 auto;
+		text-align: center;
+		background-color:#73b0c4;
+		border-radius: 20px;
+		-webkit-box-shadow: 0px 2px 4px 0px #c7c7c7; 
+        box-shadow: 0px 2px 4px 0px #c7c7c7; 
+		-webkit-animation: glow 3s ease infinite alternate;
+		-webkit-animation-play-state: paused;
+		-moz-animation: glow 3s ease infinite alternate;
+		-moz-animation-play-state: paused;
+		-o-animation: glow 3s ease infinite alternate;
+		-o-animation-play-state: paused;
+		animation: glow 3s ease infinite alternate;
+		animation-play-state: paused;
+	}
+		
+	.button:hover {
+		-webkit-animation-play-state: running;
+		-moz-animation-play-state: running;
+		-o-animation-play-state: running;
+		animation-play-state: running;
+	}
+	
+	@-webkit-keyframes glow {
+		0% {background-color:#73b0c4;}
+		20% {background-color:#093746;}
+		70% {background-color:#30778e;}
+		100% {background-color:#60c7e9;}
+	}
+	
+	@-moz-keyframes glow {
+		0% {background-color:#73b0c4;}
+		20% {background-color:#093746;}
+		70% {background-color:#30778e;}
+		100% {background-color:#60c7e9;}
+	}
+	
+	@-o-keyframes glow {
+		0% {background-color:#73b0c4;}
+		20% {background-color:#093746;}
+		70% {background-color:#30778e;}
+		100% {background-color:#60c7e9;}
+	}
+	
+	@-keyframes glow {
+		0% {background-color:#73b0c4;}
+		20% {background-color:#093746;}
+		70% {background-color:#30778e;}
+		100% {background-color:#60c7e9;}
+	}

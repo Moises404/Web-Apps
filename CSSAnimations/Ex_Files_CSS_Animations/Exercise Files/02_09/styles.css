@@ -1,0 +1,51 @@
+	body {background-color:#e9e9e9;}
+	.wrapper {margin:2em;}
+	
+	.mol {
+		width:200px;
+		height:200px;
+		background:transparent url('molecule.png') top center no-repeat;
+		position:absolute;
+		left:400px;
+		
+		-webkit-animation-name: roll-in, scale-up, bounce;		
+		-webkit-animation-duration: 1s, .75s, .5s;				
+		-webkit-animation-delay: 0s, 1s, 1.75s;
+		-webkit-animation-timing-function: ease-in, linear, ease-in-out;				
+		-webkit-animation-iteration-count: 1,1,1;		
+		-webkit-animation-fill-mode: forwards;			
+	}
+	
+@-webkit-keyframes roll-in {
+	0%{-webkit-transform: translateX(-200px) rotate(0deg);}		
+	100% {-webkit-transform: translateX(0px) rotate(360deg);}		
+}
+
+@-webkit-keyframes scale-up {
+	0% {
+		-webkit-transform: scale(1);
+		-webkit-animation-timing-function: ease-in;
+	}
+	25% {
+		-webkit-transform: scale(1.2);
+		-webkit-animation-timing-function: ease-out;
+	}
+	60% {
+		-webkit-transform: scale(1);
+		-webkit-animation-timing-function: ease-in;
+	}
+	100% {
+		-webkit-transform: scale(1.2);
+		-webkit-animation-timing-function: ease-out;
+	}
+}
+
+@-webkit-keyframes bounce {
+	0%{-webkit-transform: translateY(0px);}
+	70%{-webkit-transform: translateY(20px);}
+	80%{-webkit-transform: translateY(-10px);}
+	100%{-webkit-transform: translateY(0px);} 
+}
+
+
+

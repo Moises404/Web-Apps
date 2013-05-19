@@ -1,0 +1,83 @@
+/* class that assigns the animation */
+.fallingBackground2 {
+  height: 100%;
+  background: transparent url(../facts/block_025_a/image/background_right.png) 50% 0 repeat-y;
+  -webkit-animation: bgfall 0.5s linear infinite;
+  -moz-animation: bgfall 0.5s linear infinite;
+  animation: bgfall 0.5s linear infinite;
+}
+
+.move-item {
+   -webkit-animation: move-left-right 5s ease-in-out infinite;
+  -moz-animation: move-left-right 5s ease-in-out infinite;
+  animation: move-left-right 5s ease-in-out infinite;
+}
+
+.move-over-right {
+   -webkit-animation: move-right 3s ease-in-out infinite;
+  -moz-animation: move-right 3s ease-in-out infinite;
+  animation: move-right 3s ease-in-out infinite;
+}
+
+
+/* defining the animation */
+@-webkit-keyframes bgfall {
+  from { background-position: center 0;}
+  to {background-position: center 955px;}
+}
+@-moz-keyframes bgfall {
+  from { background-position: center 0;}
+  to {background-position: center 955px;}
+}
+@keyframes bgfall {
+  from { background-position: center 0;}
+  to {background-position: center 955px;}
+}
+
+
+@-webkit-keyframes move-left-right {
+	0% {-webkit-transform: translateX(100px);}
+	20% {-webkit-transform: translateX(-10px);}
+	100% {-webkit-transform:translateX(450px);}			
+}
+
+@-moz-keyframes move-left-right {
+	0% {-moz-transform: translateX(100px);}
+	20% {-moz-transform: translateX(-10px);}
+	100% {-moz-transform:translateX(450px);}			
+}
+
+@-o-keyframes move-left-right {
+	0% {-o-transform: translateX(100px);}
+	20% {-o-transform: translateX(-10px);}
+	100% {-o-transform:translateX(450px);}			
+}
+@-o-keyframes move-left-right {
+	0% {-o-transform: translateX(100px);}
+	20% {-o-transform: translateX(-10px);}
+	100% {-o-transform:translateX(450px);}			
+}
+@-keyframes move-left-right {
+	0% {transform: translateX(100px);}
+	20% {transform: translateX(-10px);}
+	100% {transform:translateX(450px);}			
+}
+
+
+@-webkit-keyframes move-right {
+	from {-webkit-transform: translateX(0);}
+	to {-webkit-transform: translateX(450px);}
+}
+@-moz-keyframes move-right {
+	from {-moz-transform: translateX(0);}
+	to {-moz-transform: translateX(450px);}
+}
+@-o-keyframes move-right {
+	from {-o-transform: translateX(0);}
+	to {-o-transform: translateX(450px);}
+}
+@-keyframes move-right {
+	from {transform: translateX(0);}
+	to {transform: translateX(450px);}
+}
+

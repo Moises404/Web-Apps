@@ -1,0 +1,23 @@
+/* bumper car - challenge */
+
+body {
+	background:#383b3b;
+}
+						
+.wrapper {
+	margin: 2em auto;
+	width:800px;
+	position:relative;
+}
+
+.cycle {
+	position: relative;
+	top:20px;
+	left:20px;
+	
+	}
+
+@-webkit-keyframes ride {
+
+
+}

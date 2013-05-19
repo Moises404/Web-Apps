@@ -1,0 +1,9 @@
+.sprite {
+	width:245px;
+	height:400px;
+	display:block;	
+	background:transparent url(walker.png) 0 0 no-repeat;
+	margin:3em auto;
+}
+
+/* -webkit-animation: walker 2s steps(10) infinite; */

@@ -1,0 +1,59 @@
+body {background:#333;}	
+	
+.wrapper {
+	-webkit-perspective: 1000px;
+}
+.pic {
+	width:200px;
+	height:200px;
+	float:left;
+	margin:.5em;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-o-transform-origin: top left;
+	transform-origin: top left;
+	
+	-webkit-animation: hinge .5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  1 normal both;
+	-moz-animation: hinge .5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  1 normal both;
+	-o-animation: hinge .5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  1 normal both;
+	animation: hinge .5s cubic-bezier(0.250, 0.460, 0.450, 0.940)  1 normal both;
+	
+}
+
+.pic:nth-of-type(2n+1) {
+	-webkit-animation-delay:.2s;
+	-moz-animation-delay:.2s;
+	-ms-animation-delay:.2s;
+	-o-animation-delay:.2s;
+	animation-delay:.2s;
+}
+
+.pic:nth-of-type(3n+1) {
+	-webkit-animation-delay:.3s;
+	-moz-animation-delay:.3s;
+	-ms-animation-delay:.3s;
+	-o-animation-delay:.3s;
+	animation-delay:.3s;
+}
+
+@-webkit-keyframes hinge {
+	from {-webkit-transform: rotateY(90deg);}
+	to {-webkit-transform: rotateY(0deg);}
+}
+@-moz-keyframes hinge {
+	from {-moz-transform: rotateY(90deg);}
+	to {-moz-transform: rotateY(0deg);}
+}
+@-o-keyframes hinge {
+	from {-o-transform: rotateY(90deg);}
+	to {-o-transform: rotateY(0deg);}
+}
+@-keyframes hinge {
+	from {transform: rotateY(90deg);}
+	to {transform: rotateY(0deg);}
+}
+
+
+
+	

@@ -1,0 +1,221 @@
+@import url('base.css');
+
+/*
+red: #97190a
+green: #008e76
+blue: #0cb5db
+orange: #ed782a
+grey: #9caaa4
+yellow: #f2c048
+purple: #6f1e58
+*/
+
+
+/* ----------------
+=header
+------------------*/
+
+header h1 {
+	position:absolute;
+	left:220px;
+	top: 18px;
+	font-size: 3em;
+	z-index:4;
+	color:#0cb5db;
+	}
+
+header {
+	position: relative;
+	width:70%;
+	margin:1em auto 0 auto;
+	
+}
+
+.opening {
+	display: block;
+	position:relative;
+	width:200px;
+	height:200px;
+	background: #a9a8a8;
+	overflow: hidden;
+}
+
+.opening img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+.opening .cup {
+	left: -45px;
+	top: 80px;
+	-webkit-animation: cup-in 10s ease-in infinite 5s forwards;
+}
+
+/*---------------------
+=nav
+---------------------*/
+ul.nav {
+	color:white;
+	font-size:2em;
+	text-align: center;
+	margin:1em auto 2em auto;
+	padding: 0 0 .5em 0;
+	width:60%;
+	border-bottom: 1px solid #393636;
+	
+}
+.nav a {
+	color:white;
+	text-decoration: none;
+}
+
+.nav li {
+	list-style: none;
+	display:inline;
+	margin: 0 20px 0 0;
+}
+
+
+/* ----------------
+=Profiles 
+------------------*/
+
+/* for noting first and second selections */
+.nav a.selected1, .compare1 h1 {color:#6f1e58;}
+.nav a.selected2, .compare2 h1 {color:#f2c048;}
+
+.profile h1 {
+	margin:0 0 .5em 0;
+}
+
+.profile li {
+	display:inline-block;
+	background:#fff;
+	border-radius: 100%;
+	width:40px;
+	height:40px;
+}
+.calories li {
+	width:20px;
+	height:20px;
+}
+
+.profile div {
+  min-height:6.5em;  
+}  
+
+.pronounce span {
+	font-size: 3em;
+	font-family: "prenton-condensed",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	margin:0;
+	padding:0;
+	line-height: 1em;
+}
+
+.pronounce h2, {
+	margin:0;
+}
+
+.profile li {
+	background:#008e76;
+}
+.pronounce span {
+	color: #0cb5db;
+}
+
+/*------------------
+=vs
+------------------*/
+
+.vs div {
+	background:#9caaa4;
+	border-radius: 100%;
+	width:150px;
+	height:150px;
+	text-align: center;
+	overflow: hidden;
+	margin:8em auto;
+}
+
+.vs h3 {
+	color:#565656;
+	font-size:5em;
+	margin:.35em auto;
+}
+
+
+
+/*--------------------
+=structure
+---------------------*/
+.wrap {
+	width:90%;
+	margin:auto;
+}
+
+.data {
+	position:relative;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.profile {
+	width:40%;
+	padding:0 0 4em 0;
+	margin:0;
+	position:absolute;
+}
+.vs {
+	width: 19%;
+	position:absolute;
+	left:38%;
+}
+
+.profile .films {
+	float:left;
+	width:40%;
+	margin-right:5%;
+}
+.profile .rating {
+	float:left;
+	width:40%;
+}
+.pronounce {
+	padding-bottom:3em;
+}
+
+.compare1 {top:0; left:0;}
+.compare2 {top:0; right:0;}
+
+
+/*---------------------
+=misc
+---------------------*/
+
+.group:after { /*clearfix*/
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden {display: none;}
+
+
+/*---------------------
+=animations
+---------------------*/
+
+@-webkit-keyframes cup-in {
+	5%, 80%{-webkit-transform:translateX(103px);}
+	90%, 100%{-webkit-transform:translateX(240px);}
+}
+
+
+
+
+
+
+

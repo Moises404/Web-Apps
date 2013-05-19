@@ -1,0 +1,16 @@
+/* animation-direction */
+
+body {margin: 4em 10%; background:#737373;}
+		
+ .ball {
+	-webkit-animation-name: move-right;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+@-webkit-keyframes move-right {
+	from {-webkit-transform: translateX(0);}
+	to {-webkit-transform: translateX(450px);}
+}

@@ -1,0 +1,28 @@
+.sprite {
+	width:245px;
+	height:400px;
+	display:block;	
+	background:transparent url(walker.png) 0 0 no-repeat;
+	margin:3em auto;
+	-webkit-animation: walker 2s steps(10) infinite;
+	-moz-animation: walker 2s steps(10) infinite;
+	-o-animation: walker 2s steps(10) infinite;
+	animation: walker 2s steps(10) infinite;
+}
+
+@-webkit-keyframes walker {
+	 0% {background-position: 0 0; } 
+	 100% {background-position: 0 -4000px; } /* Must be full height of sprite or skipping will happen.*/
+}
+@-moz-keyframes walker {
+	 0% {background-position: 0 0; } 
+	 100% {background-position: 0 -4000px; } 
+}
+@-o-keyframes walker {
+	 0% {background-position: 0 0; } 
+	 100% {background-position: 0 -4000px; }
+}
+@-keyframes walker {
+	 0% {background-position: 0 0; } 
+	 100% {background-position: 0 -4000px; } 
+}

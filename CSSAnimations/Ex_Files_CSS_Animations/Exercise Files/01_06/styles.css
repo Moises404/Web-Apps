@@ -1,0 +1,42 @@
+/* Morton the unicycle rider - challenge */
+
+body {
+	background:#383b3b;
+}
+						
+.wrapper {
+	margin: 2em auto;
+	width:800px;
+	position:relative;
+}
+
+.cycle {
+	position: relative;
+	top:20px;
+	left:20px;
+	
+	-webkit-animation-name: ride;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: 2;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-fill-mode: forwards;
+	}
+
+@-webkit-keyframes ride {
+	0%{
+		-webkit-transform:translateX(0);
+	}
+	20% {
+		-webkit-transform:translateX(10px);
+	}
+	35% {
+		-webkit-transform:translateX(-10px);
+	}
+	85%{
+		-webkit-transform:translateX(400px);
+	}
+	100%{
+		-webkit-transform:translateX(340px);
+	}
+}

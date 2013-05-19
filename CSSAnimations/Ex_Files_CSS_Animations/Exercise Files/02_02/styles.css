@@ -1,0 +1,73 @@
+body {
+  background: #0f0300;
+}
+
+/*--------------------------------------------
+=footer
+--------------------------------------------- */
+.footer {
+  width: 100%;
+  min-height: 300px;
+}
+
+ul.social {
+  clear: both;
+  margin: 44px auto;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  width: 256px;
+  text-align: center;
+}
+
+ul.social li {
+  list-style: none;
+  float: left;
+}
+
+ul.social a {
+  text-decoration: none;
+  display: block;
+  text-indent: -9999em;
+  background: transparent url('img/social-nav-back.jpg') no-repeat 0 0;
+  width: 64px;
+  height: 97px;
+}
+
+ul.social #flickr {
+  background-position: 0 0;
+}
+
+ul.social #flickr:hover {
+  background-position: 0 -97px;
+}
+
+ul.social #dribbble {
+  background-position: -64px 0;
+}
+
+ul.social #dribbble:hover {
+  background-position: -64px -97px;
+}
+
+ul.social #twitter {
+  background-position: -128px 0;
+}
+ul.social #twitter:hover {
+  background-position: -128px -97px;
+}
+
+ul.social #facebook {
+  background-position: -192px 0;
+}
+
+ul.social #facebook:hover {
+  background-position: -192px -97px;
+}
+
+
+
+
+
+
+
