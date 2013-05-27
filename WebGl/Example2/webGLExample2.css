@@ -1,0 +1,12 @@
+#container {
+	width: 95%;
+	height: 80%;
+	position: absolute;
+}
+
+#prompt {
+	width: 95%;
+	height: 6%;
+	bottom: 0;
+	position: absolute;
+}
