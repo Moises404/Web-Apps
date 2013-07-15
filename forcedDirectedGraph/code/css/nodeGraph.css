@@ -22,7 +22,7 @@ body {
 	left: 50px;
 	top: 50px;
 
-	z-index: 0;
+	z-index: 20;
 }
 .node2 {
 	width: 50px;
@@ -38,10 +38,11 @@ body {
 	left: 300px;
 	top: 300px;
 
-	z-index: 0;
+	z-index: 20;
 }
 .line1_wrapper {
 	position: absolute;
+	display: inline-block;
 	z-index: 10;
 }
 .line1 {

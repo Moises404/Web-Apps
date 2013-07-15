@@ -1,7 +1,7 @@
 // A $ (document).ready block
 $(document).ready(function() {
 
-	console.log("dragon!");
+	console.log("forced directed graph!");
 
 	// CHeck if jQuery and jQueryUI have loaded
 	if (jQuery) {  
@@ -27,6 +27,25 @@ $(document).ready(function() {
 
 
 	var line1 = $(".line1");
-	console.log(line1.attr({"x1": node1_x, "y1": node1_y, "x2": node2_x, "y2": node2_y}));
+	line1.attr({"x1": node1_x, "y1": node1_y, "x2": node2_x, "y2": node2_y});
+
+
+		//draggable
+		node1.draggable({
+			drag: function () {
+				line1.attr({"x1": node1.css("left"), "y1": node1.css("top")});
+			}
+		});
+
+		node2.draggable({
+			drag: function () {
+				line1.attr({"x2": node2.css("left"), "y2": node2.css("top")});
+			}
+		});
+
+		//console.log(node1);
+
+
+
 
 });
