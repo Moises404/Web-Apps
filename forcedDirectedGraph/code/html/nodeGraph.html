@@ -9,18 +9,25 @@
 
 			<!-- javascript -->
 			<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  			<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 			<script type="text/javascript" src="../js/nodeGraph.js"></script>
 		</head>
 
 		<body>
+			
+			<div class="node1-boundary">
+				<span class="node1 drag"></span>
+			</div>
+
+			<div class="node2-boundary">
+				<span class="node2"></span>
+			</div>
+
+			<!-- node repeller example -->
+			<!--<span class="circle"></span>-->
+
 			<svg class="line1wrapper">
 			  <line class="line1" x1="50" y1="50" x2="300" y2="300" style="stroke:rgb(255,0,0);stroke-width:2"/>
 			</svg>
-			<div class="node1 drag"></div>
-			<div class="node2"></div>
-
-			<!-- node repeller example -->
-			<span class="circle"></span>
 		</body>
 	</html>
