@@ -12,7 +12,6 @@ body {
 .node1 {
 	width: 50px;
 	height: 50px;
-
 	margin-left: -25px;
 	margin-top: -25px;
 
@@ -22,15 +21,15 @@ body {
 	left: 50px;
 	top: 50px;
 
+	border-radius: 30px;
+	border: 5px solid orange;
 	z-index: 20;
 }
 .node2 {
 	width: 50px;
 	height: 50px;
-
 	margin-left: -25px;
 	margin-top: -25px;
-
 
 	background-color: yellow;
 	position: absolute;
@@ -38,12 +37,31 @@ body {
 	left: 300px;
 	top: 300px;
 
+	border-radius: 30px;
+	border: 5px solid red;
 	z-index: 20;
 }
-.line1_wrapper {
+.line1wrapper {
 	position: absolute;
-	display: inline-block;
+	display: inline-block !important;
 	z-index: 10;
 }
 .line1 {
+}
+
+/* node repeller example */
+.circle {
+    float: left;
+    width: 54px;
+    height: 54px;
+    background-color: #5061cf;
+}
+
+.bumper {
+    position: absolute;
+    top: 75px;
+    left: 200px;
+    padding: 32px;
+    overflow: auto;
+    outline: 1px solid red;
 }
