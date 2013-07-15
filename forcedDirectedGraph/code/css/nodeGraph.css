@@ -1,0 +1,48 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+}
+
+.node1 {
+	width: 50px;
+	height: 50px;
+
+	margin-left: -25px;
+	margin-top: -25px;
+
+	background-color: green;
+	position: absolute;
+
+	left: 50px;
+	top: 50px;
+
+	z-index: 0;
+}
+.node2 {
+	width: 50px;
+	height: 50px;
+
+	margin-left: -25px;
+	margin-top: -25px;
+
+
+	background-color: yellow;
+	position: absolute;
+
+	left: 300px;
+	top: 300px;
+
+	z-index: 0;
+}
+.line1_wrapper {
+	position: absolute;
+	z-index: 10;
+}
+.line1 {
+}

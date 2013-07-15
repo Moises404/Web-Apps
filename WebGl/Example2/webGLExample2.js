@@ -29,7 +29,7 @@ function onLoad() {
 
 	// Create a shaded, texture-mapped cube and add it to the scene
 	// First create the texture map
-	var mapUrl = "imgs/path.png";
+	var mapUrl = "imgs/alyssa.jpg";
 	var map = THREE.ImageUtils.loadTexture(mapUrl);
 
 	// Now, create a Phong material to show shading; pass in the map
