@@ -63,6 +63,15 @@ var mb_logos_imgSrc = [
 	"imgs/MaybeLegal_Logos/MaybeLegal_UrbanOutfitters.png",
 ]
 
+var mb_animGif_time = [
+	6000,
+	5600,
+	3700,
+	4000,
+	5600,
+	3200
+]
+
 var mb_animGif = [
 	"imgs/gifs/cartoon_gif_comp1.gif",
 	"imgs/gifs/cartoon_gif_comp2.gif",
@@ -80,7 +89,7 @@ for (i = 0; i < mb_logos_imgSrc.length; i++) {
 }
 
 for (i = 0; i < mb_animGif.length; i++) {
-	var gif = new mb_gif(mb_animGif[i], 4000);
+	var gif = new mb_gif(mb_animGif[i], mb_animGif_time[i]);
 	gifArray.push(gif);
 }
 
@@ -105,8 +114,9 @@ currentGif_inner.load( function() {
 		currentGif_inner.css({"opacity": 1}, 100);
 
 		setTimeout( function() {
-			currentGif_wrapper.animate({"opacity": 0, "zIndex": -20}, 200)
-		}, 3800);
+			currentGif_wrapper.animate({"opacity": 0
+				, "zIndex": -20}, 200)
+		}, random_mb_gif.totalTime);
 	}
 );
 
