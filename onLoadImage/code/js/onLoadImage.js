@@ -16,9 +16,9 @@ $(document).ready(function() {
 		console.log("UI is not loaded");
 	}
 
-	$('.large_background').load(function() {
-		$(this).animate({"opacity": 1}, 2000);
-	});
+	//$('').load(function() {
+	//	$(this).animate({"opacity": 1}, 2000);
+	//});
 
 
 

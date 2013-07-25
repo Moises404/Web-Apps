@@ -76,7 +76,7 @@ $(document).ready(function() {
 				var currentNode = $(this);
 				var collidedNode = node1;
 
-				collisionDetection($(this));
+				collisionDetection(collidedNode);
 			}
 		});
 
