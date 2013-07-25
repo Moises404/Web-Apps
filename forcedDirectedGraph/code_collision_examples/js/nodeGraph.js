@@ -53,6 +53,9 @@ $(document).ready(function() {
 	console.log(node1.all_boundaries());
 	console.log(node2.all_boundaries());
 
+	console.log(node1_jquery);
+	console.log(node2_jquery);
+
 
 
 
@@ -90,33 +93,36 @@ $(document).ready(function() {
 			// console.log("node2: " + "top: " + node2_top + ", left: " + node2_left + ", bottom: " + node2_bottom + ", right: " + node2_right);
 			// console.log("node2_boundary: " + "top: " + node2_boundary_top + ", left: " + node2_boundary_left + ", bottom: " + node2_boundary_bottom + ", right: " + node2_boundary_right);
 
+	*/
+
 	// line connecting the two nodes
 	var line1 = $(".line1");
-	line1.attr({"x1": node1_centerX, "y1": node1_centerY, "x2": node2_centerX, "y2": node2_centerY});
+	line1.attr({"x1": node1.centerX, "y1": node1.centerY, "x2": node2.centerX, "y2": node2.centerY});
 
 		/////////////
 		//draggable//
 		/////////////
 
-		node1.draggable({
+	
+		node1_jquery.draggable({
 			drag: function () {
-				line1.attr({"x1": node1.css("left"), "y1": node1.css("top")});
+				line1.attr({"x1": node1_jquery.css("left"), "y1": node1_jquery.css("top")});
 				
 				// currentNode to pass through
 				var currentNode = $(this);
-				var collidedNode = node2;
+				var collidedNode = node2_jquery;
 
 				collisionDetection(collidedNode);
 			}
 		});
 
-		node2.draggable({
+		node2_jquery.draggable({
 			drag: function () {
-				line1.attr({"x2": node2.css("left"), "y2": node2.css("top")});	
+				line1.attr({"x2": node2_jquery.css("left"), "y2": node2_jquery.css("top")});	
 				
 				// currentNode to pass through
 				var currentNode = $(this);
-				var collidedNode = node1;
+				var collidedNode = node1_jquery;
 
 				collisionDetection(collidedNode);
 			}
@@ -124,7 +130,7 @@ $(document).ready(function() {
 
 		function collisionDetection(collidedNode) {
 			// node1 boundary
-			node1_boundary_top = parseInt(node1.css("top")) - 50;
+			/*node1_boundary_top = parseInt(node1.css("top")) - 50;
 			node1_boundary_left = parseInt(node1.css("left")) - 50;
 			node1_boundary_right = parseInt(node1_boundary_left) + 100;
 			node1_boundary_bottom = parseInt(node1_boundary_top) + 100;
@@ -155,9 +161,11 @@ $(document).ready(function() {
 				//collidedNode.animate({"top": "10px", "left": "10px" }, 400);
 				// line1.attr({"x1": node1_centerX, "y1": node1_centerY, "x2": node2_centerX, "y2": node2_centerY});
 				// console.log("top: " + oppositeDiff_topBottom + "px" + " left: " + oppositeDiff_leftRight + "px" + " bottom: " + oppositeDiff_bottomTop + "px" + " right: " + oppositeDiff_rightLeft + "px");
-			}
+			}*/
+
+			console.log("drag");
 
 		}
 
-		line1.attr({"x1": node1.css("left"), "y1": node1.css("top")});*/
+		line1.attr({"x1": node1_jquery.css("left"), "y1": node1_jquery.css("top")});
 });
