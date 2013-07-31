@@ -130,38 +130,38 @@ $(document).ready(function() {
 
 		function collisionDetection(collidedNode) {
 			// node1 boundary
-			/*node1_boundary_top = parseInt(node1.css("top")) - 50;
-			node1_boundary_left = parseInt(node1.css("left")) - 50;
-			node1_boundary_right = parseInt(node1_boundary_left) + 100;
-			node1_boundary_bottom = parseInt(node1_boundary_top) + 100;
+			node1.boundary_top = parseInt(node1_jquery.css("top")) - 50;
+			node1.boundary_left = parseInt(node1_jquery.css("left")) - 50;
+			node1.boundary_right = parseInt(node1_jquery.boundary_left) + 100;
+			node1.boundary_bottom = parseInt(node1_jquery.boundary_top) + 100;
 
 
 			// node2 boundary
-			node2_boundary_top = parseInt(node2.css("top")) - 50;
-			node2_boundary_left = parseInt(node2.css("left")) - 50;
-			node2_boundary_right = parseInt(node2_boundary_left) + 100;
-			node2_boundary_bottom = parseInt(node2_boundary_top) + 100;
+			node2.boundary_top = parseInt(node2_jquery.css("top")) - 50;
+			node2.boundary_left = parseInt(node2_jquery.css("left")) - 50;
+			node2.boundary_right = parseInt(node2_jquery.boundary_left) + 100;
+			node2.boundary_bottom = parseInt(node2_jquery.boundary_top) + 100;
 
 			// console.log("node1: " + "right: " + node1_boundary_right + ", left: " + node1_boundary_left + ", bottom: " + node1_boundary_bottom + ", top: " + node1_boundary_top);
 			// console.log("node2: " + "left: " + node2_boundary_left + ", right: " + node2_boundary_right + ", top: " + node2_boundary_top + ", bottom: " + node2_boundary_bottom);
 
-			var oppositeDiff_rightLeft = (node1_boundary_right - node2_boundary_left);
-			var oppositeDiff_leftRight = (node1_boundary_left - node2_boundary_right);
-			var oppositeDiff_bottomTop = (node1_boundary_bottom - node2_boundary_top);
-			var oppositeDiff_topBottom = (node1_boundary_top - node2_boundary_bottom);
+			var oppositeDiff_rightLeft = (node1_jquery.boundary_right - node2.boundary_left);
+			var oppositeDiff_leftRight = (node1_jquery.boundary_left - node2.boundary_right);
+			var oppositeDiff_bottomTop = (node1_jquery.boundary_bottom - node2.boundary_top);
+			var oppositeDiff_topBottom = (node1_jquery.boundary_top - node2.boundary_bottom);
 
 
 			// console.log("callback");
-			if (node1_boundary_right > node2_boundary_left &&
-				node1_boundary_left < node2_boundary_right && 
-				node1_boundary_bottom > node2_boundary_top &&
-				node1_boundary_top < node2_boundary_bottom) {
+			if (node1_jquery.boundary_right > node2_jquery.boundary_left &&
+				node1_jquery.boundary_left < node2_jquery.boundary_right && 
+				node1_jquery.boundary_bottom > node2_jquery.boundary_top &&
+				node1_jquery.boundary_top < node2_jquery.boundary_bottom) {
 				console.log("collision!");
 
 				//collidedNode.animate({"top": "10px", "left": "10px" }, 400);
 				// line1.attr({"x1": node1_centerX, "y1": node1_centerY, "x2": node2_centerX, "y2": node2_centerY});
 				// console.log("top: " + oppositeDiff_topBottom + "px" + " left: " + oppositeDiff_leftRight + "px" + " bottom: " + oppositeDiff_bottomTop + "px" + " right: " + oppositeDiff_rightLeft + "px");
-			}*/
+			}
 
 			console.log("drag");
 
